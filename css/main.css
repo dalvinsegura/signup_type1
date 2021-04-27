@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_img{
+    /* background-image: url(../img/bg_img.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.sign_up{
+    z-index: 1;
+    text-align: center;
+    margin:auto;
+    
+    width: 50vw;
+    background: #ffffff85;
+    padding: 2%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.253);
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+h1{
+    color: #0047bb;
+    border-bottom: 2px solid #0047bb;
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    
+}
+
+.inputs{
+    margin: 5px 0;
+}
+
+.inputs input{
+    text-align: center;
+    color: #004fcf;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inputs .input_text{
+    width: 55%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffffa2;
+
+}
+
+.inputs .radio_text{
+    color: #002766;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.inputs .radio_input{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #001d4b;
+
+}
+
+.submit_btn{
+    width: 30%;
+    height: 35px;
+    margin: 10px auto 10px;
+    border-radius: 20px;
+    border: none;
+    background: #094ece;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+/* HOVERS */
+
+.inputs>input:hover{
+    box-shadow: 0 0 3px .5px  #0047bb;
+}
+
+.inputs:hover{
+    transform: scale(1.07,1.05);
+}
+
+.submit_btn:hover{
+    background: rgba(255, 255, 255, 0.479);
+    color: #0047bb;
+    transform: scale(1.02,1,02);
+    transition: all .3s ease;
+}
+
+.submit_btn:active{
+    background: green;
+    color: #fff;
+}
+
+.inputs>input::s{
+    box-shadow: 0 0 3px .5px green;
+    color: rebeccapurple;
+}
