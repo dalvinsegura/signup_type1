@@ -14,6 +14,7 @@
     position: absolute;
     top: 0;
     z-index: -1;
+    
 }
 
 .sign_up{
@@ -96,6 +97,65 @@ form{
     color: #fff;
 }
 
+.invalid_form{
+    background:red;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invalid_form_show{
+    top: 0;
+    /* transition: all 1s ease-in-out; */
+    
+}
+
+.invalid_form_hide{
+    top: -200%;
+    transition: all 10s ease;
+}
+
+.valid_form{
+    background:green;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valid_form_show{
+    top: 0;
+    transition: all 1s ease-in-out;
+    
+}
+
+.valid_form_hide{
+    top: -200%;
+    transition: all 2s ease-in-out;
+    
+}
+
+
+.valid_form p{
+    color: #fff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
 /* HOVERS */
 
 .inputs>input:hover{
@@ -121,4 +181,11 @@ form{
 .inputs>input::s{
     box-shadow: 0 0 3px .5px green;
     color: rebeccapurple;
+}
+
+.hide_signup{
+    transform: translate(0,-200%);
+    transition: all 1s ease-in-out;
+
+    /* display: none; */
 }

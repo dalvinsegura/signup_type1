@@ -11,49 +11,50 @@
   </head>
   <body>
     <img class="bg_img" src="./img/bg_img.jpg" alt="" />
-    <section class="sign_up slideDown">
+    <section id="sign_up" class="sign_up nbvcxz">
+      <!-- slideDown -->
       <h1>Registrate ahora</h1>
 
       <div class="form_content">
         <form action="">
           <div class="inputs">
-            <input class="input_text" type="text" name="name" id="name_input" placeholder="Nombre" />
+            <input class="input_text" type="text" name="name" id="name_input inputs" placeholder="Nombre" />
           </div>
 
           <div class="inputs">
-            <input class="input_text" type="text" name="lastname" id="lastname_input" placeholder="Apellido"/>
+            <input class="input_text" type="text" name="lastname" id="lastname_input inputs" placeholder="Apellido"/>
           </div>
 
           <div class="inputs">
-            <input class="input_text" type="email" name="email" id="email_input" placeholder="Correo Electronico" />
+            <input class="input_text" type="email" name="email" id="email_input inputs" placeholder="Correo Electronico" />
           </div>
 
           <div class="inputs">
-            <input class="input_text" type="text" name="age" id="age_input" placeholder="Edad" />
+            <input class="input_text" type="text" name="age" id="age_input inputs" placeholder="Edad" />
           </div>
 
           <div class="inputs">
             <p class="radio_text">Sexo:</p>
               
-            <input class="radio_input" type="radio" name="woman" id="gender_woman_input" />
+            <input class="radio_input" type="radio" name="woman" id="gender_woman_input inputs" />
             <label class="radio_input" for="gender_woman_input">Mujer</label>
 
-              <input class="radio_input" type="radio" name="man" id="gender_man_input" />
+              <input class="radio_input" type="radio" name="man" id="gender_man_input inputs" />
               <label class="radio_input" for="gender_man_input">Hombre</label>
           </div>
 
           <div class="inputs">
             <p class="radio_text">¿Tienes titulo universitario?:</p>
 
-              <input class="radio_input" type="radio" name="yes" id="career_yes_input" />
+              <input class="radio_input" type="radio" name="yes" id="career_yes_input inputs" />
               <label class="radio_input" for="career_yes_input">SI</label>
 
-              <input class="radio_input" type="radio" name="no" id="career_no_input" />
+              <input class="radio_input" type="radio" name="no" id="career_no_input inputs" />
               <label class="radio_input" for="career_no_input">NO</label>
           </div>
 
           <div class="inputs">
-            <input class="input_text" type="text" name="gender" id="career_input" placeholder="Titulo Universitario"/>
+            <input class="input_text" type="text" name="gender" id="career_input inputs" placeholder="Titulo Universitario"/>
           </div>
 
           <div class="agree_input">
@@ -65,12 +66,26 @@
               dolorum dolorem eveniet voluptates repellat.</label
             >
           </div>
-          <button class="submit_btn" type="submit">CREAR AHORA</button>
+          <button id="btn_submit" class="submit_btn" type="button">CREAR AHORA</button>
         </form>
+        <p style="background: #fff;" id="showname"></p>
       </div>
-    </section>
 
+    </section>
+    <div class="main-content">
+
+
+
+    </div>
+
+
+
+
+    <div id="invalid_form" class="invalid_form"><p id="invalid_form_te falta">¡te falta campo por llenar!</p></div>
+    <div id="valid_form" class="valid_form"><p id="valid_form_te falta">¡Llenado exitoxamente!</p></div>
+ 
     <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <!--  -->
   </body>
